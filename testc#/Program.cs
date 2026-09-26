@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Bai4_2_StudentRegister
+namespace Bai4_3_ProductManager
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Bai4_2_StudentRegister
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormRegister());
+            Application.Run(new MainForm());
         }
     }
 }
