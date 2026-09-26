@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Bai4_1_Calculator
+namespace Bai4_2_StudentRegister
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Bai4_1_Calculator
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new FormRegister());
         }
     }
 }
