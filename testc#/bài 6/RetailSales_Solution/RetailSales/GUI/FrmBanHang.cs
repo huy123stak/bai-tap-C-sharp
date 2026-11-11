@@ -131,8 +131,15 @@ namespace RetailSales.GUI
 
         private int? MaKHChon()
         {
-            if (cbKH.SelectedValue == null) return null;
-            int ma = Convert.ToInt32(cbKH.SelectedValue);
+            object selectedValue = cbKH.SelectedValue;
+            if (selectedValue == null || selectedValue == DBNull.Value) return null;
+
+
+            if (selectedValue is DataRowView rowView)
+                selectedValue = rowView["MaKH"];
+
+            if (selectedValue == null || selectedValue == DBNull.Value) return null;
+            int ma = Convert.ToInt32(selectedValue);
             if (ma == 0) return null;
             return ma;
         }
